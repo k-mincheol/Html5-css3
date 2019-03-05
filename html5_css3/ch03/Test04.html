@@ -1,0 +1,58 @@
+<!-- 선택자 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>html css basic</title>
+    <style>
+        /* input 태그 중에서 type속성값을 text를 가지는 태그 */
+        input[type="text"] {
+            background: red;
+        }
+        input[type="password"]{
+            background: blue;
+        }
+
+        img[src$=png]{
+            border: 5px solid red;
+        }
+        img[src$=jpg]{
+            border: 3px solid blue;
+        }
+        #header h1{color: red;}
+        #section h1{color: orange;}
+
+        /* 반응선택자 */
+        h1:hover{color: red;}
+        h1:active{color: blue;}
+        h2:hover{color: blue;}
+        h2:active{color: red;}
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text">
+        <input type="password">
+        <hr>
+        <img src="/home/kimmincheol/바탕화면/imgtest.png" width="200" height="250">
+        <img src="/home/kimmincheol/바탕화면/다운로드.jpg" width="200" height="250">
+    </form>
+    <hr>
+    <div id="header">
+        <h1 class="title">gogogo</h1>
+        <div id="nav">navigation</div>
+    </div>
+    <div id="section">
+        <h1 class="title">gogogo2</h1>
+        <p>gogogogogogogogogo</p>
+    </div>
+    <hr>
+    <!-- 반응선택자 -->
+    <h1>User Action select</h1>
+    <h2>User Action select</h2>
+    <h1>User Action select</h1>
+</body>
+
+</html>
