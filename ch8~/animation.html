@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>animation test</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <script src="prefixfree.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+
+            transition-duration: 2s;
+        }
+
+        .box:hover {
+            width: 200px;
+            height: 300px;
+        }
+
+        .box:active {
+            background-color: blue;
+        }
+
+        #graph {
+            width: 610px;
+            border: 3px solid black;
+        }
+
+        .bar {
+            width: 10px;
+            height: 50px;
+            background-color: orange;
+            margin: 5px;
+
+            transition-duration: 5s;
+        }
+
+        .dd {
+            width: 10px;
+            height: 50px;
+            background-color: blue;
+            margin: 5px;
+
+            transition-duration: 3s;
+        }
+
+        #graph:hover>.dd {
+            width: 300px;
+        }
+
+        #graph:active>.dd {
+            background-color: orange;
+        }
+
+        #graph:hover>.bar {
+            width: 600px;
+        }
+
+        /* <transition-delay> */
+
+         .bar:nth-child(1) {
+            transition-delay: 0s;
+        }
+
+        .bar:nth-child(2) {
+            transition-delay: 1s;
+        }
+
+        .bar:nth-child(3) {
+            transition-delay: 2s;
+        }
+
+        .bar:nth-child(4) {
+            transition-delay: 3s;
+        }
+        .bar:nth-child(5) {
+            transition-delay: 4s;
+        } 
+        
+
+        /* <transition-timing-function>
+
+        .bar:nth-child(1) {
+            transition-timing-function: linear;
+        }
+
+        .bar:nth-child(2) {
+            transition-timing-function: ease;
+        }
+
+        .bar:nth-child(3) {
+            transition-timing-function: ease-in;
+        }
+
+        .bar:nth-child(4) {
+            transition-timing-function: ease-in-out;
+        }
+        */
+
+        /*
+        .bar:nth-child(1) {
+            transition-timing-function: cubic-bezier(0,1,1,0);
+            
+        }
+        */
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <hr>
+
+    <div id="graph">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="dd"></div>
+    </div>
+</body>
+
+</html>

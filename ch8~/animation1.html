@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>animation test</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <script src="prefixfree.min.js"></script>
+    <style>
+        #graph {
+            width: 610px;
+            border: 3px solid black;
+        }
+
+        .bar {
+            width: 10px;
+            height: 50px;
+            background-color: orange;
+            margin: 5px;
+
+            transition-duration: 5s;
+        }
+
+        #graph:hover>.bar:nth-child(1) {
+            background-color: orange;
+            width: 100px;
+        }
+
+        #graph:hover>.bar:nth-child(2) {
+            background-color: blue;
+            width: 300px;
+        }
+
+        #graph:hover>.bar:nth-child(3) {
+            background-color: red;
+            width: 540px;
+        }
+
+        #graph:hover>.bar:nth-child(4) {
+            background-color: yellow;
+            width: 250px;
+        }
+        #graph:hover>.bar:nth-child(5) {
+            background-color: green;
+            width: 400px;
+        } 
+        
+    </style>
+</head>
+
+<body>
+    <div id="graph">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</body>
+
+</html>
